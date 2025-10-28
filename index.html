@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta name="description" content="Digital Portfolio - A Story of Innovation. Explore my creative projects and professional work.">
+    <meta name="theme-color" content="#3d2618">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>Digital Portfolio - A Story of Innovation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Lato:wght@300;400;700&family=Cormorant+Garamond:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Book Container -->
+    <div class="book-container">
+        <!-- Book Spine (visible when closed) -->
+        <div class="book-spine">
+            <span class="spine-text">Portfolio</span>
+        </div>
+
+        <!-- Table of Contents (Sidebar Navigation) -->
+        <nav class="table-of-contents" id="toc">
+            <div class="toc-header">
+                <h3>Table of Contents</h3>
+                <button class="toc-close" id="tocClose">&times;</button>
+            </div>
+            <ul class="toc-list">
+                <li><a href="#cover" data-page="0">Cover</a></li>
+                <li><a href="#chapter1" data-page="1">Chapter 1: E-Commerce Platform</a></li>
+                <li><a href="#chapter2" data-page="2">Chapter 2: Mobile Banking App</a></li>
+                <li><a href="#chapter3" data-page="3">Chapter 3: AI Dashboard</a></li>
+                <li><a href="#chapter4" data-page="4">Chapter 4: Brand Identity System</a></li>
+                <li><a href="#chapter5" data-page="5">Chapter 5: Smart Home Interface</a></li>
+                <li><a href="#chapter6" data-page="6">Chapter 6: Portfolio Website</a></li>
+                <li><a href="#contact" data-page="7">Back Cover - Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Toggle TOC Button -->
+        <button class="toc-toggle" id="tocToggle">
+            <span class="toc-icon">☰</span>
+        </button>
+
+        <!-- Page Turn Controls -->
+        <button class="page-control prev" id="prevPage">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M15 18l-6-6 6-6"/>
+            </svg>
+        </button>
+        <button class="page-control next" id="nextPage">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M9 18l6-6-6-6"/>
+            </svg>
+        </button>
+
+        <!-- Page Counter -->
+        <div class="page-counter" id="pageCounter">
+            <span class="current-page">1</span> / <span class="total-pages">8</span>
+        </div>
+
+        <!-- Book Pages -->
+        <div class="book" id="book">
+            
+            <!-- Cover Page -->
+            <div class="page active" id="cover" data-page="0">
+                <div class="page-content cover-page">
+                    <div class="cover-ornament top"></div>
+                    <div class="cover-content">
+                        <p class="cover-subtitle">A Digital Portfolio</p>
+                        <h1 class="cover-title">Lonely</h1>
+                        <p class="cover-tagline">Creative Developer & Designer</p>
+                        <div class="cover-ornament-center"></div>
+                        <p class="cover-mail">Mail: lonely@example.com</p>
+                    </div>
+                    <div class="cover-ornament bottom"></div>
+                    <div class="cover-texture"></div>
+                </div>
+            </div>
+
+            <!-- Chapter 1: E-Commerce Platform -->
+            <div class="page" id="chapter1" data-page="1">
+                <div class="page-content chapter-page">
+                    <div class="chapter-header">
+                        <span class="chapter-number">Chapter 1</span>
+                        <h2 class="chapter-title">Luxury E-Commerce Platform</h2>
+                    </div>
+                    <div class="chapter-body">
+                        <div class="project-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1661956602116-aa6865609028?w=800&h=600&fit=crop" alt="E-Commerce Platform" class="project-image">
+                            <div class="image-caption">Full-stack shopping experience</div>
+                        </div>
+                        <div class="project-details">
+                            <p class="project-description">
+                                A sophisticated e-commerce platform designed for luxury brands, featuring an immersive shopping 
+                                experience with advanced filtering, personalized recommendations, and seamless checkout. 
+                                The platform integrates with multiple payment gateways and includes a comprehensive admin dashboard 
+                                for inventory management and analytics.
+                            </p>
+                            <div class="tools-used">
+                                <h4>Tools & Technologies</h4>
+                                <div class="tool-tags">
+                                    <span class="tool-tag">React</span>
+                                    <span class="tool-tag">Node.js</span>
+                                    <span class="tool-tag">MongoDB</span>
+                                    <span class="tool-tag">Stripe</span>
+                                    <span class="tool-tag">AWS</span>
+                                </div>
+                            </div>
+                            <div class="project-stats">
+                                <div class="stat">
+                                    <span class="stat-value">300%</span>
+                                    <span class="stat-label">Sales Increase</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-value">50K+</span>
+                                    <span class="stat-label">Active Users</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page-number">1</div>
+                </div>
+            </div>
+
+            <!-- Chapter 2: Mobile Banking App -->
+            <div class="page" id="chapter2" data-page="2">
+                <div class="page-content chapter-page">
+                    <div class="chapter-header">
+                        <span class="chapter-number">Chapter 2</span>
+                        <h2 class="chapter-title">Mobile Banking Application</h2>
+                    </div>
+                    <div class="chapter-body">
+                        <div class="project-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800&h=600&fit=crop" alt="Mobile Banking App" class="project-image">
+                            <div class="image-caption">Secure financial management</div>
+                        </div>
+                        <div class="project-details">
+                            <p class="project-description">
+                                A next-generation mobile banking app that redefines financial management. Built with security-first 
+                                principles, the app features biometric authentication, real-time transaction monitoring, budgeting tools, 
+                                and AI-powered spending insights. The intuitive interface makes complex banking operations simple and accessible.
+                            </p>
+                            <div class="tools-used">
+                                <h4>Tools & Technologies</h4>
+                                <div class="tool-tags">
+                                    <span class="tool-tag">React Native</span>
+                                    <span class="tool-tag">TypeScript</span>
+                                    <span class="tool-tag">Firebase</span>
+                                    <span class="tool-tag">Plaid API</span>
+                                    <span class="tool-tag">Redux</span>
+                                </div>
+                            </div>
+                            <div class="project-stats">
+                                <div class="stat">
+                                    <span class="stat-value">4.8★</span>
+                                    <span class="stat-label">App Rating</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-value">200K+</span>
+                                    <span class="stat-label">Downloads</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page-number">2</div>
+                </div>
+            </div>
+
+            <!-- Chapter 3: AI Dashboard -->
+            <div class="page" id="chapter3" data-page="3">
+                <div class="page-content chapter-page">
+                    <div class="chapter-header">
+                        <span class="chapter-number">Chapter 3</span>
+                        <h2 class="chapter-title">AI Analytics Dashboard</h2>
+                    </div>
+                    <div class="chapter-body">
+                        <div class="project-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop" alt="AI Dashboard" class="project-image">
+                            <div class="image-caption">Data visualization reimagined</div>
+                        </div>
+                        <div class="project-details">
+                            <p class="project-description">
+                                An enterprise-grade analytics dashboard powered by machine learning algorithms. The platform provides 
+                                real-time insights, predictive analytics, and customizable reports. Features include interactive data 
+                                visualizations, automated anomaly detection, and seamless integration with popular data sources.
+                            </p>
+                            <div class="tools-used">
+                                <h4>Tools & Technologies</h4>
+                                <div class="tool-tags">
+                                    <span class="tool-tag">Vue.js</span>
+                                    <span class="tool-tag">Python</span>
+                                    <span class="tool-tag">TensorFlow</span>
+                                    <span class="tool-tag">D3.js</span>
+                                    <span class="tool-tag">PostgreSQL</span>
+                                </div>
+                            </div>
+                            <div class="project-stats">
+                                <div class="stat">
+                                    <span class="stat-value">95%</span>
+                                    <span class="stat-label">Accuracy</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-value">10M+</span>
+                                    <span class="stat-label">Data Points</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page-number">3</div>
+                </div>
+            </div>
+
+            <!-- Chapter 4: Brand Identity System -->
+            <div class="page" id="chapter4" data-page="4">
+                <div class="page-content chapter-page">
+                    <div class="chapter-header">
+                        <span class="chapter-number">Chapter 4</span>
+                        <h2 class="chapter-title">Brand Identity System</h2>
+                    </div>
+                    <div class="chapter-body">
+                        <div class="project-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=800&h=600&fit=crop" alt="Brand Identity" class="project-image">
+                            <div class="image-caption">Complete visual language</div>
+                        </div>
+                        <div class="project-details">
+                            <p class="project-description">
+                                A comprehensive brand identity system for a forward-thinking tech startup. The project included logo design, 
+                                color palette development, typography selection, iconography, and brand guidelines. The cohesive visual 
+                                language reflects the company's innovative spirit while maintaining professional credibility.
+                            </p>
+                            <div class="tools-used">
+                                <h4>Tools & Technologies</h4>
+                                <div class="tool-tags">
+                                    <span class="tool-tag">Figma</span>
+                                    <span class="tool-tag">Adobe Illustrator</span>
+                                    <span class="tool-tag">Photoshop</span>
+                                    <span class="tool-tag">After Effects</span>
+                                    <span class="tool-tag">Procreate</span>
+                                </div>
+                            </div>
+                            <div class="project-stats">
+                                <div class="stat">
+                                    <span class="stat-value">150+</span>
+                                    <span class="stat-label">Assets Created</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-value">100%</span>
+                                    <span class="stat-label">Client Satisfaction</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page-number">4</div>
+                </div>
+            </div>
+
+            <!-- Chapter 5: Smart Home Interface -->
+            <div class="page" id="chapter5" data-page="5">
+                <div class="page-content chapter-page">
+                    <div class="chapter-header">
+                        <span class="chapter-number">Chapter 5</span>
+                        <h2 class="chapter-title">Smart Home Interface</h2>
+                    </div>
+                    <div class="chapter-body">
+                        <div class="project-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1558002038-1055907df827?w=800&h=600&fit=crop" alt="Smart Home" class="project-image">
+                            <div class="image-caption">Connected living experience</div>
+                        </div>
+                        <div class="project-details">
+                            <p class="project-description">
+                                An intuitive control center for smart home devices, bringing all IoT products under one unified interface. 
+                                The system includes voice control integration, automated routines, energy monitoring, and security features. 
+                                Designed for both tech enthusiasts and everyday users with focus on simplicity and accessibility.
+                            </p>
+                            <div class="tools-used">
+                                <h4>Tools & Technologies</h4>
+                                <div class="tool-tags">
+                                    <span class="tool-tag">Flutter</span>
+                                    <span class="tool-tag">IoT Hub</span>
+                                    <span class="tool-tag">MQTT</span>
+                                    <span class="tool-tag">Alexa SDK</span>
+                                    <span class="tool-tag">GraphQL</span>
+                                </div>
+                            </div>
+                            <div class="project-stats">
+                                <div class="stat">
+                                    <span class="stat-value">30+</span>
+                                    <span class="stat-label">Device Types</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-value">40%</span>
+                                    <span class="stat-label">Energy Saved</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page-number">5</div>
+                </div>
+            </div>
+
+            <!-- Chapter 6: Portfolio Website -->
+            <div class="page" id="chapter6" data-page="6">
+                <div class="page-content chapter-page">
+                    <div class="chapter-header">
+                        <span class="chapter-number">Chapter 6</span>
+                        <h2 class="chapter-title">Interactive Portfolio Website</h2>
+                    </div>
+                    <div class="chapter-body">
+                        <div class="project-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=800&h=600&fit=crop" alt="Portfolio Website" class="project-image">
+                            <div class="image-caption">Digital storytelling</div>
+                        </div>
+                        <div class="project-details">
+                            <p class="project-description">
+                                A unique portfolio website with an immersive storytelling approach. Features include smooth page transitions, 
+                                parallax scrolling, interactive project showcases, and micro-animations that enhance user engagement. 
+                                The design balances aesthetics with performance, ensuring fast load times without compromising visual appeal.
+                            </p>
+                            <div class="tools-used">
+                                <h4>Tools & Technologies</h4>
+                                <div class="tool-tags">
+                                    <span class="tool-tag">Next.js</span>
+                                    <span class="tool-tag">Three.js</span>
+                                    <span class="tool-tag">GSAP</span>
+                                    <span class="tool-tag">Framer Motion</span>
+                                    <span class="tool-tag">Tailwind CSS</span>
+                                </div>
+                            </div>
+                            <div class="project-stats">
+                                <div class="stat">
+                                    <span class="stat-value">98</span>
+                                    <span class="stat-label">Performance Score</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-value">5min+</span>
+                                    <span class="stat-label">Avg. Session</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page-number">6</div>
+                </div>
+            </div>
+
+            <!-- Back Cover - Contact Page -->
+            <div class="page" id="contact" data-page="7">
+                <div class="page-content back-cover-page">
+                    <div class="back-cover-content">
+                        <div class="back-cover-message">
+                            <h2 class="epilogue-title">The Story Continues...</h2>
+                            <p class="epilogue-text">Let's write the next chapter together.</p>
+                        </div>
+                        
+                        <form class="contact-form" id="contactForm">
+                            <div class="form-group">
+                                <input type="text" id="name" name="name" required placeholder=" ">
+                                <label for="name">Your Name</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" name="email" required placeholder=" ">
+                                <label for="email">Your Email</label>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="message" name="message" rows="4" required placeholder=" "></textarea>
+                                <label for="message">Your Message</label>
+                            </div>
+                            <button type="submit" class="submit-btn">Send Message</button>
+                        </form>
+
+                        <div class="contact-info">
+                            <p class="contact-email">lonely@example.com</p>
+                            <div class="social-links">
+                                <a href="#" class="social-link" aria-label="LinkedIn">
+                                    <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                                    </svg>
+                                </a>
+                                <a href="#" class="social-link" aria-label="GitHub">
+                                    <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                    </svg>
+                                </a>
+                                <a href="#" class="social-link" aria-label="Dribbble">
+                                    <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 0c-6.628 0-12 5.373-12 12s5.372 12 12 12 12-5.373 12-12-5.372-12-12-12zm9.885 11.441c-2.575-.422-4.943-.445-7.103-.073-.244-.563-.497-1.125-.767-1.68 2.31-1 4.165-2.358 5.548-4.082 1.35 1.594 2.197 3.619 2.322 5.835zm-3.842-7.282c-1.205 1.554-2.868 2.783-4.986 3.68-1.016-1.861-2.178-3.676-3.488-5.438.779-.197 1.591-.314 2.431-.314 2.275 0 4.368.779 6.043 2.072zm-10.516-.993c1.331 1.742 2.511 3.538 3.537 5.381-2.43.715-5.331 1.082-8.684 1.105.692-2.835 2.601-5.193 5.147-6.486zm-5.527 8.834c0-.095.006-.19.008-.285 3.909.013 7.405-.419 10.442-1.296.211.423.415.852.608 1.284-3.497 1.112-6.373 3.075-8.61 5.888-1.522-1.623-2.448-3.791-2.448-6.191zm4.257 8.338c1.967-2.443 4.546-4.155 7.724-5.127.387 1.018.733 2.057 1.038 3.118-2.629.759-5.604.761-8.762-.991zm11.505.549c-.264-.932-.567-1.852-.909-2.759 1.773-.299 3.677-.256 5.714.048-.593 1.279-1.553 2.353-2.755 3.085-.343-1.133-.743-2.239-1.229-3.374z"/>
+                                    </svg>
+                                </a>
+                                <a href="#" class="social-link" aria-label="Twitter">
+                                    <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cover-texture"></div>
+                    <div class="page-number">7</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Notification -->
+    <div class="notification" id="notification">
+        <p id="notificationText"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
